@@ -10,7 +10,7 @@ def roots(a, b, c):
     if r1==r2:
         return f"({r1})"
     else:
-        return f"{r1}, {r2}"
+        return f"({r1}, {r2})"
         
 def value_y(a, b, c, x):
     y = a * (x ** 2) + b * x + c
