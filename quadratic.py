@@ -17,8 +17,14 @@ def value_y(a, b, c, x):
     return y
     
 def to_string(a, b, c):
-    func = f"f(x) = {a} * X^2 + {b} * X + {c}"
-    return func
+    if a and b and c:
+        return f"f(x) = {a} * X^2 + {b} * X + {c}"
+    elif b and c:
+        return f"f(x) = {b} * X + {c}"
+    elif a and c:
+        return f"f(x) = {a} * X^2 + {c}"
+    elif not a and not b and c:
+        return f"f(x) = {c}"
 
 def derivation(a, b, c):
     if a and b:
